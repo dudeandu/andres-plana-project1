@@ -1,0 +1,48 @@
+@use "./variables";
+
+@mixin h1Typography {
+  font-family: variables.$headlineFont;
+  font-weight: 400;
+  line-height: 64px;
+  font-size: 68px;
+}
+
+@mixin headingsTypography {   
+  font-family: variables.$secondaryFont;
+  font-weight: 400;
+  line-height: 33px;
+  font-size: 58px;
+  letter-spacing: 2.1px;
+}
+
+@mixin logoTypography {
+  font-family: variables.$secondaryFont;
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+}
+
+@mixin navTypography {
+  font-family: variables.$tertFont;
+  font-weight: 700;
+  line-height: 29px;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+}
+
+@mixin buttonTypography {
+  font-family: variables.$secondaryFont;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+@mixin bodyTypography {
+  font-family: variables.$tertFont;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}

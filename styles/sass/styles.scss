@@ -1,4 +1,6 @@
-@use 'setup';
+@use './partials/setup';
+@use './partials/variables';
+@use './partials/typography';
 
 $mainColor: #f08080;
 $secondaryColor: #F8F8F8;
