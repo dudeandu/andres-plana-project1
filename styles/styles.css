@@ -239,3 +239,82 @@ template {
 .skip-link:focus {
   left: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+html {
+  background-color: #F5F5F5;
+}
+
+html {
+  font-size: 125%;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-weight: 400;
+  line-height: 64px;
+  font-size: 68px;
+  text-transform: uppercase;
+}
+
+header {
+  background-image: url("../sanctuary-helpers-final-images/header-home.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+header .flexList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header .flexList li {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 29px;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-right: 45px;
+}
+header .flexList li:first-of-type {
+  border-bottom: 4px solid #F8FB05;
+}
+header .flexList li:last-of-type {
+  margin-right: 0;
+}
+header h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-weight: 400;
+  line-height: 64px;
+  font-size: 68px;
+  text-transform: uppercase;
+  max-width: 50%;
+  margin: 60px 0 0 260px;
+}

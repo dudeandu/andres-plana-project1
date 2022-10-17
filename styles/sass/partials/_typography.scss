@@ -5,6 +5,7 @@
   font-weight: 400;
   line-height: 64px;
   font-size: 68px;
+  text-transform: uppercase;
 }
 
 @mixin headingsTypography {   
@@ -13,6 +14,7 @@
   line-height: 33px;
   font-size: 58px;
   letter-spacing: 2.1px;
+  text-transform: uppercase;
 }
 
 @mixin logoTypography {
@@ -21,6 +23,7 @@
   line-height: 22px;
   font-size: 24px;
   letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 
 @mixin navTypography {
@@ -29,6 +32,7 @@
   line-height: 29px;
   font-size: 20px;
   letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 @mixin buttonTypography {
@@ -45,4 +49,19 @@
   line-height: 32px;
   font-size: 20px;
   letter-spacing: 2px;
+}
+
+//font setup
+html {
+  font-size: 125%;
+}
+
+// remove some margins and list styles 
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0
+}
+
+h1 {
+  @include h1Typography;
 }

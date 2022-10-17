@@ -1,6 +1,6 @@
-@use './partials/setup';
-@use './partials/variables';
-@use './partials/typography';
-
-$mainColor: #f08080;
-$secondaryColor: #F8F8F8;
+@use "./partials/setup";
+@use "./partials/variables";
+@use "./partials/global";
+@use "./partials/typography";
+@use "./partials/header";
+@use "./partials/discovery";

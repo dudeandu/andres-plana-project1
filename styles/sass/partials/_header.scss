@@ -1,0 +1,29 @@
+@use "./variables";
+@use "./typography";
+
+
+header {
+  background-image: url("../sanctuary-helpers-final-images/header-home.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  .flexList {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      @include typography.navTypography;
+      margin-right: 45px;
+      &:first-of-type {
+        border-bottom: 4px solid variables.$brightYellow;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  h1 {
+    @include typography.h1Typography;
+    max-width: 50%;
+    margin: 60px 0 0 260px;
+  }
+}
