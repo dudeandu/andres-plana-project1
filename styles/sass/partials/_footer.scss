@@ -1,0 +1,15 @@
+@use "./variables";
+@use "./typography";
+@use "./global";
+
+
+footer {
+  background-color: variables.$black;
+  padding: 10px 0;
+  
+  p {
+      @include typography.bodyTypography;
+      text-align: center;
+      color: variables.$white;
+  }
+}

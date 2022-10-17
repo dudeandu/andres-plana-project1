@@ -227,6 +227,24 @@ template {
   overflow: hidden;
 }
 
+html {
+  font-size: 125%;
+  color: #151514;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-weight: 400;
+  line-height: 64px;
+  font-size: 68px;
+  text-transform: uppercase;
+}
+
 .skip-link {
   position: absolute;
   left: -1000px;
@@ -251,6 +269,7 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 .wrapper {
@@ -261,23 +280,6 @@ img {
 
 html {
   background-color: #F5F5F5;
-}
-
-html {
-  font-size: 125%;
-}
-
-h1, h2, h3, h4, p, ul {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-family: "Kumar One Outline", cursive;
-  font-weight: 400;
-  line-height: 64px;
-  font-size: 68px;
-  text-transform: uppercase;
 }
 
 header {
@@ -317,4 +319,264 @@ header h1 {
   text-transform: uppercase;
   max-width: 50%;
   margin: 60px 0 0 260px;
+}
+
+section.discovering {
+  margin-bottom: 80px;
+}
+section.discovering .wrapperFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.discovering .textContainer {
+  width: 65%;
+}
+section.discovering .textContainer h2 {
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 58px;
+  font-size: 33px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+section.discovering .textContainer p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 15px 0 20px;
+}
+section.discovering .textContainer a {
+  background-color: #065635;
+  padding: 15px 15px 8px;
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  display: inline-block;
+}
+section.discovering .imgContainer {
+  height: 35%;
+  background-color: #F8FB05;
+}
+section.discovering .imgContainer img {
+  -webkit-transform: translate(15px, -15px);
+          transform: translate(15px, -15px);
+}
+
+section.gallery {
+  background-color: #E0FDDF;
+  padding: 60px 0;
+}
+section.gallery .galleryFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.gallery .galleryFlex li {
+  max-width: 31%;
+}
+
+section.special {
+  padding: 60px 0 30px;
+}
+section.special .galleryFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+section.special .galleryFlex li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+section.special .textIconContainer {
+  margin: 30px 0;
+}
+section.special .textIconContainer .iconContainer {
+  margin-right: 15px;
+}
+section.special .textIconContainer p.icon {
+  background-color: #F8FB05;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  text-align: center;
+}
+section.special .textIconContainer p.icon .fa-solid {
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: 1px;
+}
+section.special .textIconContainer h2 {
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 58px;
+  font-size: 33px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+section.special .textIconContainer p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+section.progAndLoc {
+  background-color: #E0FDDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.progAndLoc .itemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 40%;
+}
+section.progAndLoc .itemContainer.leftContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+section.progAndLoc .itemContainer.rightContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+section.progAndLoc .imgContainer {
+  width: 100%;
+  background-color: #F8FB05;
+}
+section.progAndLoc .leftContainer .imgContainer {
+  -webkit-transform: translate(15px, 15px);
+          transform: translate(15px, 15px);
+}
+section.progAndLoc .leftContainer .imgContainer img {
+  -webkit-transform: translate(-15px, -15px);
+          transform: translate(-15px, -15px);
+}
+section.progAndLoc .rightContainer .imgContainer {
+  -webkit-transform: translate(-15px, -15px);
+          transform: translate(-15px, -15px);
+}
+section.progAndLoc .rightContainer .imgContainer img {
+  -webkit-transform: translate(15px, 15px);
+          transform: translate(15px, 15px);
+}
+section.progAndLoc .textContainer {
+  max-width: 75%;
+  padding: 60px 0;
+}
+section.progAndLoc .textContainer h2 {
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 58px;
+  font-size: 33px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+section.progAndLoc .textContainer p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 15px 0 20px;
+}
+section.progAndLoc .textContainer a {
+  background-color: #065635;
+  padding: 15px 15px 8px;
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  display: inline-block;
+}
+section.progAndLoc .textContainer.rightAlign {
+  text-align: right;
+}
+
+section.bannerStyle .imageContainer {
+  width: 100%;
+}
+section.bannerStyle .imageContainer img {
+  width: 100%;
+}
+section.bannerStyle .textContainer {
+  margin: 160px 0;
+  text-align: center;
+}
+section.bannerStyle .textContainer h2 {
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 58px;
+  font-size: 33px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+section.bannerStyle .textContainer p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 15px 0 20px;
+  text-align: left;
+}
+section.bannerStyle .textContainer a {
+  background-color: #065635;
+  padding: 15px 15px 8px;
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+footer {
+  background-color: #151514;
+  padding: 10px 0;
+}
+footer p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #F5F5F5;
 }

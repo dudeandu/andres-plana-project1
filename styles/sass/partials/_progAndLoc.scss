@@ -1,0 +1,53 @@
+@use "./variables";
+@use "./typography";
+@use "./global";
+
+section.progAndLoc {
+  background-color: variables.$ice;
+  display: flex;
+  justify-content: space-between;
+  .itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40%;
+    &.leftContainer {
+      justify-content: flex-end;
+    }
+    &.rightContainer {
+      flex-direction: column-reverse;
+    }
+  }
+  .imgContainer {
+    width: 100%;
+    background-color: variables.$brightYellow;
+  }
+  .leftContainer .imgContainer {
+    transform: translate(15px,15px);
+    img {
+      transform: translate(-15px,-15px);
+    }
+  }
+  .rightContainer .imgContainer {
+    transform: translate(-15px,-15px);
+    img {
+      transform: translate(15px,15px);
+    }
+  }
+  .textContainer {
+    max-width: 75%;
+    padding: 60px 0;
+    h2 {
+      @include typography.headingsTypography;
+    }
+    p {
+      @include typography.bodyTypography;
+      margin: 15px 0 20px;
+    }
+    a {
+      @include global.buttonMixin;
+    }
+    &.rightAlign {
+      text-align: right;
+    }
+  }
+}

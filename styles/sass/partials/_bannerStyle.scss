@@ -1,0 +1,29 @@
+@use "./variables";
+@use "./typography";
+@use "./global";
+
+section.bannerStyle{
+  .imageContainer {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .textContainer {
+    margin: 160px 0;
+    text-align: center;
+
+    h2 {
+      @include typography.headingsTypography;
+    }
+    p {
+      @include typography.bodyTypography;
+      margin: 15px 0 20px;
+      // max-width: 1080px;
+      text-align: left;
+    }
+    a {
+      @include global.buttonMixin;
+    }
+  }
+}

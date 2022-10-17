@@ -1,0 +1,82 @@
+html {
+  font-size: 125%;
+  color: #151514;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-weight: 400;
+  line-height: 64px;
+  font-size: 68px;
+  text-transform: uppercase;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+html {
+  background-color: #F5F5F5;
+}
+
+section.progAndLoc h2 {
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 58px;
+  font-size: 33px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+section.progAndLoc p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+section.progAndLoc a {
+  background-color: #065635;
+  padding: 15px 15px 8px;
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  display: inline-block;
+}

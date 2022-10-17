@@ -1,0 +1,16 @@
+@use "./variables";
+@use "./typography";
+@use "./global";
+
+section.gallery {
+  background-color: variables.$ice;
+  padding: 60px 0;
+  .galleryFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    li {
+      max-width: 31%;
+    }
+  }
+}
