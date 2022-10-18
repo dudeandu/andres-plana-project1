@@ -1,0 +1,33 @@
+@use "./variables";
+@use "./typography";
+@use "./global";
+
+.formContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  input[type=text] {
+    padding:30px;
+    border:0;    
+    border-bottom: 2px solid variables.$evergreen;
+    background-color: variables.$ice;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  input[type=text].textImput {
+    border: 2px solid variables.$evergreen;
+    height: 200px;
+    padding-top: 0;
+  }
+  .formImput {
+    flex-basis: 45%;
+  }
+  .textImput,
+  .button {
+    flex-basis: 100%;
+  }
+  .button {
+    @include global.buttonMixin;
+  }
+
+}

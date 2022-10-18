@@ -245,6 +245,32 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 58px;
+  font-size: 33px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+p, li {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
 .skip-link {
   position: absolute;
   left: -1000px;
@@ -319,6 +345,26 @@ header h1 {
   text-transform: uppercase;
   max-width: 50%;
   margin: 60px 0 0 260px;
+}
+
+header.blogHeader {
+  background-image: url("../sanctuary-helpers-final-images/blog-image.jpg");
+  background-size: cover;
+  height: 50vh;
+}
+header.blogHeader .navFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header.blogHeader h3 {
+  max-width: 300px;
+}
+header.blogHeader h1 {
+  margin: 154px 0 0;
 }
 
 section.discovering {
@@ -585,6 +631,107 @@ footer p {
   color: #F5F5F5;
 }
 
+.blogMain {
+  background-color: #E0FDDF;
+}
+
 section.blogPost {
-  max-width: 800px;
+  max-width: 1000px;
+  background-color: #F5F5F5;
+}
+section.blogPost .postWrapper {
+  border-right: 10px solid #F8FB05;
+  border-bottom: 10px solid #F8FB05;
+  padding: 0 0 0 30px;
+}
+section.blogPost .postWrapper .imgContainer {
+  background-color: #F8FB05;
+}
+section.blogPost .postWrapper .imgContainer img {
+  width: 100%;
+  -webkit-transform: translate(-30px, -30px);
+          transform: translate(-30px, -30px);
+}
+section.blogPost .postWrapper .textContainer {
+  background-color: #F5F5F5;
+  padding: 60px 60px 60px 180px;
+}
+section.blogPost .postWrapper .textContainer p {
+  margin: 30px 0;
+}
+section.blogPost .postWrapper .textContainer p.dateAuthor {
+  font-style: italic;
+}
+section.blogPost .postWrapper .textContainer p.dateAuthor span {
+  font-weight: 700;
+}
+section.blogPost .allCommentsContainer {
+  background-color: #E0FDDF;
+  padding: 60px 60px 60px 180px;
+}
+section.blogPost .allCommentsContainer h2 {
+  margin: 60px 0;
+}
+section.blogPost .allCommentsContainer .commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.blogPost .allCommentsContainer .commentContainer .imgContainer {
+  margin-right: 40px;
+  width: 100px;
+}
+section.blogPost .allCommentsContainer .commentContainer .textContainer {
+  max-width: calc(100% - 140px);
+  margin-bottom: 60px;
+}
+section.blogPost .allCommentsContainer .commentContainer .commentDate {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.formContainer input[type=text] {
+  padding: 30px;
+  border: 0;
+  border-bottom: 2px solid #065635;
+  background-color: #E0FDDF;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.formContainer input[type=text].textImput {
+  border: 2px solid #065635;
+  height: 200px;
+  padding-top: 0;
+}
+.formContainer .formImput {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+.formContainer .textImput,
+.formContainer .button {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.formContainer .button {
+  background-color: #065635;
+  padding: 15px 15px 8px;
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  display: inline-block;
 }

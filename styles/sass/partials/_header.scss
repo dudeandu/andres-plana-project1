@@ -27,3 +27,20 @@ header {
     margin: 60px 0 0 260px;
   }
 }
+
+header.blogHeader {
+  background-image: url("../sanctuary-helpers-final-images/blog-image.jpg");
+  background-size: cover;
+  height: 50vh;
+  // padding: 60px 0;
+  .navFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+  h3{
+    max-width: 300px;
+  }
+  h1 {
+    margin: 154px 0 0;
+  }
+}

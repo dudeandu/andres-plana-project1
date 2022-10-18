@@ -66,3 +66,15 @@ h1, h2, h3, h4, p, ul {
 h1 {
   @include h1Typography;
 }
+
+h2 {
+  @include headingsTypography;  
+}
+
+h3 {
+  @include logoTypography;
+}
+
+p, li {
+  @include bodyTypography;
+}
