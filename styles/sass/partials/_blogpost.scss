@@ -1,0 +1,7 @@
+@use "./variables";
+@use "./typography";
+@use "./global";
+
+section.blogPost {
+  max-width: 800px;
+}

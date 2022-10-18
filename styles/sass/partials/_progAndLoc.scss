@@ -12,9 +12,11 @@ section.progAndLoc {
     max-width: 40%;
     &.leftContainer {
       justify-content: flex-end;
+      transform: translate(0px, -60px);
     }
     &.rightContainer {
       flex-direction: column-reverse;
+      transform: translate(0px, 60px);
     }
   }
   .imgContainer {
@@ -28,9 +30,9 @@ section.progAndLoc {
     }
   }
   .rightContainer .imgContainer {
-    transform: translate(-15px,-15px);
+    transform: translate(-15px,15px);
     img {
-      transform: translate(15px,15px);
+      transform: translate(15px,-15px);
     }
   }
   .textContainer {
