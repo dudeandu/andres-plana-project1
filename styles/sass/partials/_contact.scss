@@ -4,7 +4,7 @@
 
 .contactMain {
   background-color: variables.$ice;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   .wrapperFlex {
     max-width: 1300px;
     display: flex;
@@ -13,6 +13,7 @@
   .backBox {
     background-color: variables.$brightYellow;
     max-width: 900px;
+    transform: translateY(-60px);
   }
   .formContainer {
     background-color: variables.$white;

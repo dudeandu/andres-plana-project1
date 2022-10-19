@@ -311,6 +311,7 @@ html {
 .underline {
   border-bottom: 4px solid #F8FB05;
   height: 32px;
+  pointer-events: none;
 }
 
 header {
@@ -360,7 +361,7 @@ header.blogHeader {
 header.blogHeader,
 header.contactHeader {
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
 }
 header.blogHeader .navFlex,
 header.contactHeader .navFlex {
@@ -809,7 +810,7 @@ aside .textContainer li {
 
 .contactMain {
   background-color: #E0FDDF;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 .contactMain .wrapperFlex {
   max-width: 1300px;
@@ -823,6 +824,8 @@ aside .textContainer li {
 .contactMain .backBox {
   background-color: #F8FB05;
   max-width: 900px;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
 }
 .contactMain .formContainer {
   background-color: #F5F5F5;
