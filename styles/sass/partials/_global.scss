@@ -49,3 +49,8 @@ html {
   text-transform: uppercase;
   display: inline-block;
 }
+
+.underline {
+  border-bottom: 4px solid variables.$brightYellow;
+  height: 32px;
+}

@@ -1,0 +1,50 @@
+@use "./variables";
+@use "./typography";
+@use "./global";
+
+aside {
+  background-color: variables.$brightYellow;
+  max-width: 350px;
+  height: max-content;
+  margin-top: 240px;
+  .imgContainer {
+    transform: translate(15px, -15px);
+  }
+  .textContainer {
+    margin: 15px 0;
+    padding: 15px;
+    h3 {
+      margin: 40px 0 20px;
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+    li {
+      list-style: disc;
+      margin-left: 20px;
+    }
+  }
+
+}
+
+.contactMain aside {
+  background-color: variables.$ice;
+  margin-top: 120px;
+
+  .socialIcons {
+    display: flex;
+    margin-bottom: 20px;
+    .icon {
+      color: variables.$evergreen;
+      margin-right: 20px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  p {
+    &:first-of-type {
+      margin-bottom: 30px;
+    }
+  }
+}

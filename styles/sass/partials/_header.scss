@@ -13,9 +13,6 @@ header {
     li {
       @include typography.navTypography;
       margin-right: 45px;
-      &:first-of-type {
-        border-bottom: 4px solid variables.$brightYellow;
-      }
       &:last-of-type {
         margin-right: 0;
       }
@@ -28,8 +25,15 @@ header {
   }
 }
 
+header.contactHeader {
+  background-image: url("../sanctuary-helpers-final-images/contact-image.jpg");
+}
 header.blogHeader {
   background-image: url("../sanctuary-helpers-final-images/blog-image.jpg");
+}
+
+header.blogHeader,
+header.contactHeader {
   background-size: cover;
   height: 50vh;
   // padding: 60px 0;

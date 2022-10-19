@@ -1,0 +1,24 @@
+@use "./variables";
+@use "./typography";
+@use "./global";
+
+.contactMain {
+  background-color: variables.$ice;
+  padding-bottom: 120px;
+  .wrapperFlex {
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .backBox {
+    background-color: variables.$brightYellow;
+    max-width: 900px;
+  }
+  .formContainer {
+    background-color: variables.$white;
+    padding: 60px;
+    // padding: 60px 60px 60px 180px;
+    transform: translate(-20px,-20px);
+  }
+
+}

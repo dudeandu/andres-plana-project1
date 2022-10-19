@@ -4,6 +4,8 @@
 
 .blogMain {
   background-color: variables.$ice;
+  display: flex;
+  justify-content: space-between;
 }
 
 section.blogPost {

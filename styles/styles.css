@@ -308,6 +308,11 @@ html {
   background-color: #F5F5F5;
 }
 
+.underline {
+  border-bottom: 4px solid #F8FB05;
+  height: 32px;
+}
+
 header {
   background-image: url("../sanctuary-helpers-final-images/header-home.jpg");
   background-size: contain;
@@ -331,9 +336,6 @@ header .flexList li {
   text-transform: uppercase;
   margin-right: 45px;
 }
-header .flexList li:first-of-type {
-  border-bottom: 4px solid #F8FB05;
-}
 header .flexList li:last-of-type {
   margin-right: 0;
 }
@@ -347,12 +349,21 @@ header h1 {
   margin: 60px 0 0 260px;
 }
 
+header.contactHeader {
+  background-image: url("../sanctuary-helpers-final-images/contact-image.jpg");
+}
+
 header.blogHeader {
   background-image: url("../sanctuary-helpers-final-images/blog-image.jpg");
+}
+
+header.blogHeader,
+header.contactHeader {
   background-size: cover;
   height: 50vh;
 }
-header.blogHeader .navFlex {
+header.blogHeader .navFlex,
+header.contactHeader .navFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,10 +371,12 @@ header.blogHeader .navFlex {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header.blogHeader h3 {
+header.blogHeader h3,
+header.contactHeader h3 {
   max-width: 300px;
 }
-header.blogHeader h1 {
+header.blogHeader h1,
+header.contactHeader h1 {
   margin: 154px 0 0;
 }
 
@@ -633,6 +646,12 @@ footer p {
 
 .blogMain {
   background-color: #E0FDDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section.blogPost {
@@ -734,4 +753,80 @@ section.blogPost .allCommentsContainer .commentContainer .commentDate {
   color: #F5F5F5;
   text-transform: uppercase;
   display: inline-block;
+}
+
+.contactMain input[type=text] {
+  background-color: #F5F5F5;
+}
+
+aside {
+  background-color: #F8FB05;
+  max-width: 350px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 240px;
+}
+aside .imgContainer {
+  -webkit-transform: translate(15px, -15px);
+          transform: translate(15px, -15px);
+}
+aside .textContainer {
+  margin: 15px 0;
+  padding: 15px;
+}
+aside .textContainer h3 {
+  margin: 40px 0 20px;
+}
+aside .textContainer h3:first-of-type {
+  margin-top: 0;
+}
+aside .textContainer li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.contactMain aside {
+  background-color: #E0FDDF;
+  margin-top: 120px;
+}
+.contactMain aside .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.contactMain aside .socialIcons .icon {
+  color: #065635;
+  margin-right: 20px;
+}
+.contactMain aside .socialIcons .icon:last-of-type {
+  margin-right: 0;
+}
+.contactMain aside p:first-of-type {
+  margin-bottom: 30px;
+}
+
+.contactMain {
+  background-color: #E0FDDF;
+  padding-bottom: 120px;
+}
+.contactMain .wrapperFlex {
+  max-width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactMain .backBox {
+  background-color: #F8FB05;
+  max-width: 900px;
+}
+.contactMain .formContainer {
+  background-color: #F5F5F5;
+  padding: 60px;
+  -webkit-transform: translate(-20px, -20px);
+          transform: translate(-20px, -20px);
 }
