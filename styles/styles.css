@@ -833,3 +833,24 @@ aside .textContainer li {
   -webkit-transform: translate(-20px, -20px);
           transform: translate(-20px, -20px);
 }
+
+@media (max-width: 1350px) {
+  .wrapper {
+    width: 80%;
+  }
+  header h1 {
+    margin-left: 15%;
+  }
+  header .flexList {
+    margin-right: 20px;
+  }
+  header .imgContainer {
+    max-width: 50%;
+  }
+}
+@media (max-width: 1350px) {
+  header h1 {
+    font-size: 52px;
+    line-height: 48px;
+  }
+}
