@@ -380,6 +380,7 @@ header.contactHeader {
 
 header.blogHeader {
   background-image: url("../sanctuary-helpers-final-images/blog-image.jpg");
+  background-position: center;
 }
 
 header.blogHeader,
@@ -931,6 +932,27 @@ aside .textContainer li {
     height: -moz-max-content;
     height: max-content;
   }
+  .blogMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogMain aside {
+    margin-top: 60px;
+    max-width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 180px;
+  }
+  .blogMain aside .imgContainer {
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+  }
+  .blogMain aside .textContainer {
+    padding: 30px 60px;
+  }
 }
 @media (max-width: 1200px) {
   header h1 {
@@ -1004,6 +1026,24 @@ aside .textContainer li {
     -webkit-transform: translate(0px, -30px);
             transform: translate(0px, -30px);
   }
+  section.blogPost .postWrapper .textContainer {
+    padding: 60px 0;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  section.blogPost .allCommentsContainer {
+    padding: 60px 5%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .blogMain aside {
+    padding: 0 5%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .blogMain aside .textContainer {
+    padding-right: 0;
+  }
 }
 @media (max-width: 700px) {
   section.discovering .wrapperFlex {
@@ -1040,16 +1080,40 @@ aside .textContainer li {
     width: 100%;
   }
 }
+@media (max-width: 595px) {
+  .formContainer .formImput {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
 @media (max-width: 500px) {
   header h1 {
     font-size: 40px;
     line-height: 41px;
     margin-bottom: 40px;
   }
+  section.blogPost .allCommentsContainer .commentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.blogPost .allCommentsContainer .commentContainer .textContainer {
+    max-width: 100%;
+  }
+  .blogMain aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media (max-width: 400px) {
   header h1 {
     font-size: 30px;
     line-height: 32px;
+  }
+  .blogMain aside .textContainer {
+    padding-left: 0;
   }
 }
