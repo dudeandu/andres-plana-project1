@@ -253,6 +253,17 @@ h2 {
   letter-spacing: 2.1px;
   text-transform: uppercase;
 }
+@media (max-width: 1200px) {
+  h2 {
+    line-height: 38px;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
 
 h3 {
   font-family: "Kumar One", cursive;
@@ -319,6 +330,19 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 40px 0;
+}
+header .button {
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: #F5F5F5;
+  border: 3px solid #F8FB05;
+  display: none;
+}
+header .button p {
+  font-size: 25px;
 }
 header .flexList {
   display: -webkit-box;
@@ -402,6 +426,17 @@ section.discovering .textContainer h2 {
   font-size: 33px;
   letter-spacing: 2.1px;
   text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  section.discovering .textContainer h2 {
+    line-height: 38px;
+  }
+}
+@media (max-width: 500px) {
+  section.discovering .textContainer h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 section.discovering .textContainer p {
   font-family: "Lato", sans-serif;
@@ -495,6 +530,17 @@ section.special .textIconContainer h2 {
   letter-spacing: 2.1px;
   text-transform: uppercase;
 }
+@media (max-width: 1200px) {
+  section.special .textIconContainer h2 {
+    line-height: 38px;
+  }
+}
+@media (max-width: 500px) {
+  section.special .textIconContainer h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
 section.special .textIconContainer p {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -567,6 +613,17 @@ section.progAndLoc .textContainer h2 {
   letter-spacing: 2.1px;
   text-transform: uppercase;
 }
+@media (max-width: 1200px) {
+  section.progAndLoc .textContainer h2 {
+    line-height: 38px;
+  }
+}
+@media (max-width: 500px) {
+  section.progAndLoc .textContainer h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
 section.progAndLoc .textContainer p {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -608,6 +665,17 @@ section.bannerStyle .textContainer h2 {
   font-size: 33px;
   letter-spacing: 2.1px;
   text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  section.bannerStyle .textContainer h2 {
+    line-height: 38px;
+  }
+}
+@media (max-width: 500px) {
+  section.bannerStyle .textContainer h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 section.bannerStyle .textContainer p {
   font-family: "Lato", sans-serif;
@@ -838,19 +906,150 @@ aside .textContainer li {
   .wrapper {
     width: 80%;
   }
+  header {
+    background-size: cover;
+    background-position: right;
+  }
   header h1 {
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-top: 30px;
   }
   header .flexList {
+    margin-right: 20px;
+  }
+  header .flexList li {
     margin-right: 20px;
   }
   header .imgContainer {
     max-width: 50%;
   }
+  section.progAndLoc .itemContainer {
+    max-width: 45%;
+  }
+  section.progAndLoc .itemContainer .imgContainer {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
 }
-@media (max-width: 1350px) {
+@media (max-width: 1200px) {
   header h1 {
     font-size: 52px;
     line-height: 48px;
+  }
+}
+@media (max-width: 1100px) {
+  section.discovering .textContainer {
+    width: 50%;
+  }
+  section.progAndLoc .itemContainer {
+    max-width: 45%;
+  }
+}
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+  }
+  h1 {
+    margin-left: 5%;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 950px) {
+  header .button {
+    display: block;
+  }
+  header .flexList {
+    display: none;
+  }
+  header h1 {
+    margin-left: 5%;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 850px) {
+  section.special .galleryFlex li {
+    width: 100%;
+  }
+  section.progAndLoc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.progAndLoc .itemContainer {
+    max-width: 100%;
+    width: 100%;
+  }
+  section.progAndLoc .itemContainer .imgContainer {
+    width: 90%;
+    background-color: #F8FB05;
+    margin: 0 auto;
+  }
+  section.progAndLoc .itemContainer .imgContainer img {
+    width: 100%;
+  }
+  section.progAndLoc .itemContainer .textContainer {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  section.progAndLoc .itemContainer .textContainer.rightAlign {
+    text-align: left;
+  }
+  section.progAndLoc .itemContainer.rightContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translate(0px, -30px);
+            transform: translate(0px, -30px);
+  }
+}
+@media (max-width: 700px) {
+  section.discovering .wrapperFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section.discovering .imgContainer {
+    display: none;
+  }
+  section.discovering .textContainer {
+    max-width: 100%;
+    width: 100%;
+  }
+  section.gallery .goneOnMobile {
+    display: none;
+  }
+  section.gallery .galleryFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.gallery .galleryFlex li {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  section.gallery .galleryFlex li:last-of-type {
+    margin-bottom: 0;
+  }
+  section.gallery .galleryFlex li img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 40px;
+    line-height: 41px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 30px;
+    line-height: 32px;
   }
 }

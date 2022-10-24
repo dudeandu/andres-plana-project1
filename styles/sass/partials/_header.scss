@@ -7,6 +7,19 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 40px 0;
+  .button {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: variables.$white;
+    border: 3px solid variables.$brightYellow;
+    display: none;
+    p {
+      font-size: 25px;
+    }
+  }
   .flexList {
     display: flex;
     justify-content: flex-end;
