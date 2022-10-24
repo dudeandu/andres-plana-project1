@@ -27,12 +27,14 @@ section.progAndLoc {
     transform: translate(15px,15px);
     img {
       transform: translate(-15px,-15px);
+      width: 100%;
     }
   }
   .rightContainer .imgContainer {
     transform: translate(-15px,15px);
     img {
       transform: translate(15px,-15px);
+      width: 100%;
     }
   }
   .textContainer {

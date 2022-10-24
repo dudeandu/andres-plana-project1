@@ -598,6 +598,7 @@ section.progAndLoc .leftContainer .imgContainer {
 section.progAndLoc .leftContainer .imgContainer img {
   -webkit-transform: translate(-15px, -15px);
           transform: translate(-15px, -15px);
+  width: 100%;
 }
 section.progAndLoc .rightContainer .imgContainer {
   -webkit-transform: translate(-15px, 15px);
@@ -606,6 +607,7 @@ section.progAndLoc .rightContainer .imgContainer {
 section.progAndLoc .rightContainer .imgContainer img {
   -webkit-transform: translate(15px, -15px);
           transform: translate(15px, -15px);
+  width: 100%;
 }
 section.progAndLoc .textContainer {
   max-width: 75%;
