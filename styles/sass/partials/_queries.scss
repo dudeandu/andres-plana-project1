@@ -48,9 +48,27 @@
       }
     }
   }
+  .contactMain {
+    .backBox {
+      margin-right: 60px;
+    }
+  }
 }
 
 //end of max-width 1350px
+
+@media (max-width: 1250px) {
+  .contactMain {
+    .wrapperFlex {
+      max-width: 90%;
+      width: 100%;
+    }
+    .backBox {
+      margin-right: 30px;
+    }
+  }  
+}
+//end of max-width 1250px
 
 @media (max-width: 1200px) {
   header {
@@ -71,6 +89,14 @@
   section.progAndLoc {
     .itemContainer {
       max-width: 45%;
+    }
+  }
+  .contactMain {
+    .wrapperFlex {
+      flex-direction: column;
+    }
+    aside {
+      margin-top: 0;
     }
   }
 }
@@ -102,6 +128,7 @@
   }
 }
 //end of max-width 950px
+
 @media (max-width: 850px) {
   section.special {
     .galleryFlex {
@@ -162,6 +189,17 @@
   }
 }
 //end of max-width 850px
+
+@media (max-width: 765px) {
+  .contactMain {
+    .formContainer {
+      .formImput {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+//end of max-width 765px
 
 @media (max-width: 700px) {
   section.discovering {
@@ -235,6 +273,16 @@
       aside {
         flex-direction: column;
       } 
+    }
+    .contactMain {
+      .backBox{
+        margin-right: 0;
+      }
+      .formContainer {
+        .formImput {
+          
+        }
+      }
     }
   }
   //end of max-width 500px

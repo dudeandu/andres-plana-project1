@@ -304,6 +304,11 @@ a {
   color: inherit;
 }
 
+input {
+  min-width: 200px;
+  white-space: normal;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -953,6 +958,18 @@ aside .textContainer li {
   .blogMain aside .textContainer {
     padding: 30px 60px;
   }
+  .contactMain .backBox {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 1250px) {
+  .contactMain .wrapperFlex {
+    max-width: 90%;
+    width: 100%;
+  }
+  .contactMain .backBox {
+    margin-right: 30px;
+  }
 }
 @media (max-width: 1200px) {
   header h1 {
@@ -966,6 +983,15 @@ aside .textContainer li {
   }
   section.progAndLoc .itemContainer {
     max-width: 45%;
+  }
+  .contactMain .wrapperFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMain aside {
+    margin-top: 0;
   }
 }
 @media (max-width: 1000px) {
@@ -1045,6 +1071,12 @@ aside .textContainer li {
     padding-right: 0;
   }
 }
+@media (max-width: 765px) {
+  .contactMain .formContainer .formImput {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
 @media (max-width: 700px) {
   section.discovering .wrapperFlex {
     -webkit-box-orient: vertical;
@@ -1106,6 +1138,9 @@ aside .textContainer li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contactMain .backBox {
+    margin-right: 0;
   }
 }
 @media (max-width: 400px) {

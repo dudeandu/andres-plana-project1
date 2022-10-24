@@ -25,6 +25,11 @@ a {
   color: inherit;
 }
 
+input {
+  min-width: 200px;
+  white-space: normal;
+}
+
 img {
   max-width: 100%;
   display: block;
