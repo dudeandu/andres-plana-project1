@@ -7,13 +7,16 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 40px 0;
+  span {
+    cursor: pointer;
+  }
   .button {
     position: absolute;
     right: 0;
     width: 60px;
     height: 60px;
     border: none;
-    background-color: variables.$white;
+    background-color: rgba($color: variables.$white, $alpha: 0);
     border: 3px solid variables.$brightYellow;
     display: none;
     p {
@@ -28,6 +31,9 @@ header {
       margin-right: 45px;
       &:last-of-type {
         margin-right: 0;
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
   }

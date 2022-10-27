@@ -119,12 +119,35 @@
       display: block;
     }
     .flexList {
-      display: none;
+      // display: none;
+      flex-direction:column;
+      max-width: fit-content;
+      margin: auto;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+      li {
+        margin-right: 0;
+      }
     }
     h1 {
       margin-left: 5%;
       margin-top: 0px;
     }
+    .hamburgerContainer {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 10px;
+      text-align: center;
+      .hamburgerIcon {
+        margin: auto;
+        .button {
+          position: relative;
+        }
+      }
+    }
+
   }
 }
 //end of max-width 950px

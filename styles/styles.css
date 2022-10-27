@@ -330,11 +330,18 @@ html {
   pointer-events: none;
 }
 
+.hideThis {
+  display: none;
+}
+
 header {
   background-image: url("../sanctuary-helpers-final-images/header-home.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   padding: 40px 0;
+}
+header span {
+  cursor: pointer;
 }
 header .button {
   position: absolute;
@@ -342,7 +349,7 @@ header .button {
   width: 60px;
   height: 60px;
   border: none;
-  background-color: #F5F5F5;
+  background-color: rgba(245, 245, 245, 0);
   border: 3px solid #F8FB05;
   display: none;
 }
@@ -368,6 +375,9 @@ header .flexList li {
 }
 header .flexList li:last-of-type {
   margin-right: 0;
+}
+header .flexList li:hover {
+  cursor: pointer;
 }
 header h1 {
   font-family: "Kumar One Outline", cursive;
@@ -1010,11 +1020,43 @@ aside .textContainer li {
     display: block;
   }
   header .flexList {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: auto;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  header .flexList li {
+    margin-right: 0;
   }
   header h1 {
     margin-left: 5%;
     margin-top: 0px;
+  }
+  header .hamburgerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+  }
+  header .hamburgerContainer .hamburgerIcon {
+    margin: auto;
+  }
+  header .hamburgerContainer .hamburgerIcon .button {
+    position: relative;
   }
 }
 @media (max-width: 850px) {
