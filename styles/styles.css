@@ -1033,6 +1033,9 @@ aside .textContainer li {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
+  header .flexList.expandedNav {
+    height: 130px;
+  }
   header .flexList li {
     margin-right: 0;
   }

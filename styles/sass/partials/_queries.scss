@@ -126,6 +126,9 @@
       height: 0;
       overflow: hidden;
       transition: all 0.3s;
+      &.expandedNav {
+        height: 130px;
+      }
       li {
         margin-right: 0;
       }
